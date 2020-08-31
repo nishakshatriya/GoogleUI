@@ -6,24 +6,29 @@
     </head>
     <body>
         <div class = "login-page">
-            <div class = "form">
+            <div class = "form" name="loginform">
                 <img class="fundooImage" src="googleimage.jpg">
-                <h3 name="signup">Sign in</h3>
-                <h5 name="continue">to continue to Gmail</h6>
+                <h3 class="signup">Sign in</h3>
+                <h5 class="continue">to continue to Gmail</h5>
                 <form class="login-form" action="successpage.html" method="POST"> 
-                    <input type="text" placeholder="Username or Phone" name="username" onkeyup="disableButton()">
-                    <input type="password" name="pwd" placeholder="Password" onkeyup="disableButton()">
+                    <input type="text" placeholder="User name or Phone" class="username" required>
+                    <div class="password-eye">
                     <span>
-                        <i class="fa fa-eye" id="eye"></i>
+                        <i class="fa fa-eye" name="login-eye-icon"></i>
                     </span>
-                    <input name="button" type="submit" value="LOGIN" disabled>
+                    <input type="password" class="pwd" placeholder="Password" required>
+                </div>
+                    <button class="forgotCredentials">Forgot email or password?<a href="https://google.com"></a></button>
+                    <p class="guestmode">Not your computer?Use guest mode <a href="https://support.google.com">learn more</a></p>
+                    <input name="button" type="submit" value="LOGIN">
                     <p class="message">Create Account <a href="registration.html">Register</a></p>
                 </form>
                 </div>
+            </div>
         </div>  
         <script>
-            var pwd = document.getElementsByName('pwd')[0];
-            var eye = document.getElementById('eye');
+            var pwd = document.getElementsByClassName('pwd')[0];
+            var eye = document.getElementsByClassName('fa')[0];
             eye.addEventListener('click', togglePass);
         </script>
     </body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

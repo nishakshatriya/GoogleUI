@@ -2,29 +2,42 @@ body{
     background-color:white;
 }
 
-.xyz{
+.outer-form{
     display: flex;
-    flex-direction: column;
+    width: 600px;
+    border: 1px solid #aaa8a8 ;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: -1px 1px 1px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+
+.guestmode{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    
 }
 
 .login-page{
-    width: 400px;
-    margin: auto;
-    position: relative;
-    display:flex;
-    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
 }
 
-.form{
-    position: absolute;
-    background-color: #ffffff;
+.form1{
+    background-color:#ffffff;
     max-width: 360px;
-    margin: 50px auto 50px;
-    margin: auto;
     padding: 30px;
-    border: 1px solid rgb(170, 168, 168) !important;
-    border-radius: 10px;
-    /* display: inline; */
+    margin: auto;
+    border: 1px gray solid;
+     border-radius: 10px;
+}
+.form{
+    background-color:#ffffff;
+    max-width: 360px;
+    padding: 30px;
+    margin: auto;
 }
 
 .form input{
@@ -38,7 +51,25 @@ body{
    padding: 15px;
    font-size: 12px;
 }
+.userpassword {
+    width: 48%;
+    float: left;
+} 
 
+.confirmpassword {
+    width: 48%;
+    float:right;
+}
+
+ .firstname{
+    width: 49%;
+    float: left;   
+}
+
+ .lastname{
+    width: 49%;
+    float: right;
+}
 input[name="button"]{
     background-color: #056ed6;
     width: 100%;
@@ -47,6 +78,9 @@ input[name="button"]{
     color:white;
 }
 
+.container{
+    position: relative;
+}
 .fundooImage{
     width: 100px;
     height: 52px;
@@ -59,34 +93,49 @@ input[name="button"]{
 }
 
 .envolpe{
-    width: 50px;
-    float: right;
-    /* display: inline; */
+    width: 200px;
+    object-fit: contain;
 }
 
-.form input[name="button"]:hover,.form input[name="button"]:active{
+input[name="button"]:hover,input[name="button"]:active{
     background: #547ebd;
 }
 
-.form i{
-    margin-left: -20px;
-    margin-bottom: -10px;
+.form i[name="login-eye-icon"]{
+     /* margin-left: -20px; */
+    /* margin-bottom: -10px; */
     cursor: pointer;
+    margin-bottom:5px;
+    position: absolute; 
+    margin-left: 320px;
 }
 
-.fa{
-    position: absolute;
+.form i[name="register-eye-icon"]{
+   cursor: pointer;
+   margin-bottom:5px;
+   position: absolute; 
+   margin-left: -25px; 
+   margin-top: 15px;
+}
+
+.fa {
     cursor: pointer;
     color: #999;
-    bottom: 180px;
-    left: 350px;
+    margin-top: 15px;
 }
 
 .fa.active{
     color: midnightblue;
 }
 
+
 #nameerror{
+    color: red;
+    font-style: bold;
+    margin-top: 2px;
+}
+
+#name-error{
     color: red;
     font-style: bold;
     margin-top: 2px;
@@ -105,20 +154,56 @@ input[name="button"]{
 .message{
     text-align: left;
     font-size: 15px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
-h3[name="signup"]{
-    margin:auto;
-    margin-left: 135px;
-    margin-top: 20x;
+.signup {
+    margin-left: 145px;
+    margin-bottom: 5%;
+    font-family: "Roboto", sans-serif;
 }
 
-h5[name="continue"]{
-    margin-left: 110px;
-    font-weight: 200;
+.continue {
+    margin-left: 120px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
 }
 
-h5[name="emailInfo"]{
+.emailInfo{
     color: gray;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
+*{
+    margin:0;
+    padding: 0;
+}
+
+.forgotCredentials{
+    color: rgb(3, 3, 141);
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.password-eye {
+    display: flex;
+    justify-content: space-around;
+}
+
+.createaAccount{
+margin-bottom:15px;
+font-weight: 400;
+font-family: "Roboto", sans-serif;
+}
+
+div[name="loginform"]{
+    border: 1px gray solid; 
+    border-radius: 10px;
+}
